@@ -1,7 +1,7 @@
 //Test program for the Arm Class.
 //forces unit = kg.cm/s2
 //torque unit = kg.cm2/s2
-//output unit will be consistant with values setted for :inertia tensor,mass,length,gravity,
+//output unit will be consistant with values set for :inertia tensor,mass,length,gravity,
 //tip speed and tip acceleration.
 #include "stdafx.h"
 #include "RobotArm.h"
