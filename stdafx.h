@@ -3,9 +3,10 @@
 // are changed infrequently
 //
 
-#pragma once
+#ifndef STDAFX_H
+#define STDAFX_H
 
-#include "targetver.h"
+//#include "targetver.h"
 //#include <DirectXMath.h>
 #include <vector>
 #include <stdio.h>
@@ -32,3 +33,5 @@ FLOAT Max_Of(std::initializer_list<FLOAT> numbers);
 
 Matrix3x3 Get_Rotation(const Matrix4x4& m);
 // TODO: reference additional headers your program requires here
+
+#endif
