@@ -6,7 +6,13 @@
 #include "stdafx.h"
 #include "RobotArm.h"
 #include "Joints_Solvers.h"
+#include <iostream>
 using namespace Eigen;
+void Pause()
+{
+	std::cout<<"Press any Key to continue...\n";
+	std::cin.get();
+}
 int main()
 {
 	//30,0,0,26.2
@@ -73,7 +79,7 @@ int main()
 		printf("Link %d\t joint rate = %0.2f Rad/sec\tjoint Torque = %0.2f N.m\n", In, var->Joint_rate,var->Link_Torque.z()/10000);
 		In++;
 	}
-	system("Pause");
+	Pause();
 	return 0;
 }
 
