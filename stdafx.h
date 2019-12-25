@@ -10,8 +10,8 @@
 //#include <DirectXMath.h>
 #include <vector>
 #include <stdio.h>
-#include <tchar.h>
-#include <Dense>
+//#include <tchar.h>
+#include "Eigen/Dense"
 #include <iostream>
 #define PI 3.14159265359f
 typedef double FLOAT;

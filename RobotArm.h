@@ -42,7 +42,7 @@ public:
 	virtual void Compute_Velocities(Link* pPrevious_Link = 0 );
 	virtual void Compute_Accelerations(Link* pPrevious_Link = 0, Vector3 gravity = Vector3(0,0,0));
 	virtual void Compute_Kinematic_Force_And_Torque();
-	void Link::Compute_Joint_Force_And_Torque(Link * pNext_Link);
+	void Compute_Joint_Force_And_Torque(Link * pNext_Link);
 	virtual void Compute_Joint_Force_And_Torque(Vector3 Tip_Location, Vector3 Force= Vector3(0, 0, 0), Vector3 Torque= Vector3(0, 0, 0));
 	virtual bool is_Revolute() { return true; }
 };

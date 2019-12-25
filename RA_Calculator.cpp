@@ -32,7 +32,7 @@ int main()
 	links[3]->Set_CM(Vector3(0, 0, -0.006f) * 100);
 	links[4]->Set_CM(Vector3(0, 1.73f, 0) * 100);
 
-	for each (auto var in links)
+	for (auto var : links)
 	{
 		MyArm.Add_Link(var);
 	}
@@ -67,7 +67,7 @@ int main()
 	MyArm.Set_Joints_Rates(rates);
 	MyArm.Set_Joints_Accelerations(accelerations);
 	MyArm.Inverse_Dynamics();
-	for each (auto var in MyArm.Get_Links())
+	for (auto var : MyArm.Get_Links())
 	{
 		static auto In = 1u;
 		printf("Link %d\t joint rate = %0.2f Rad/sec\tjoint Torque = %0.2f N.m\n", In, var->Joint_rate,var->Link_Torque.z()/10000);
